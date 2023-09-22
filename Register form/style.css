@@ -1,32 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     cursor: pointer;
 }
 
 body {
-    height: 100vh;
-    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(#707090, #333637);
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#730649, #f128a4);
+    height: 100vh;
+    margin: 0;
+    cursor: pointer;
 }
 
-form {
-    height: 25rem;
-    width: 25rem;
-    display: flex;
-    flex-direction: column;
+.signup-container {
     background: rgba(255, 255, 255, 0.06);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 600px; /* Adjust the width as needed */
+    padding: 20px;
+    text-align: left; /* Align form elements to the left */
+    box-sizing: border-box;
 }
 
-h1 {
+h2 {
     font-size: 50px;
     text-align: center;
     color: white;
@@ -38,26 +41,34 @@ h1 {
 
 label {
     font-size: 20px;
-    margin-left: 10%;
+    color: white;
     opacity: 0.8;
+    margin-left: 10%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-input {
-    width: 80%;
-    margin: 5% auto;
-    margin-top: 8%;
+/* Style for form elements */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+select {
+    width: 100%;
+    color: white;
+    margin: 8px 0;
+    padding: 8px;
     border: none;
     outline: none;
     background: transparent;
-    color: white;
     border-bottom: 1px solid rgba(255, 255, 255, 0.6);
     opacity: 0.8;
 }
 
+/* Style for buttons */
 button {
-    width: 100px;
-    margin: 3% auto;
+    width: 100%;
+    margin: 10px 0;
     color: white;
     opacity: 0.7;
     background-color: rgba(255, 255, 255, 0.6);
@@ -70,13 +81,109 @@ button {
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-p {
-    font-size: 14px;
-    text-align: center;
-    color: antiquewhite;
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .signup-container {
+        width: 90%; /* Adjust the width as needed for smaller screens */
+    }
+}
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-a {
-    color: #f128a4; /* Adjusted link color */
-    text-decoration: none;
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(#c04848, #480048);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signup-container {
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 600px; /* Adjust the width as needed */
+    padding: 20px;
+    text-align: left; /* Align form elements to the left */
+}
+
+h2 {
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+label {
+    font-size: 20px;
+    color: white;
+    opacity: 0.8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for form elements */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+select {
+    width: 100%;
+    color: white;
+    margin: 8px 0;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    opacity: 0.8;
+}
+ 
+legend {
+    font-size: 20px;
+    color: white;
+    margin-left: 10%;
+    opacity: 0.8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Style for buttons */
+ signup-button{
+    width: 120px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the button horizontally */
+    color: white;
+    opacity: 0.7;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 16px rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: absolute; /* Set position to absolute */
+    bottom: -40px; /* Adjust the distance from the container */
+    left: 50%; /* Move the button to the center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+}
+.signup-button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000; /* Change text color on hover */
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .signup-container {
+        width: 90%; /* Adjust the width as needed for smaller screens */
+    }
 }
