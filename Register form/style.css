@@ -23,9 +23,9 @@ body {
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    width: 600px; /* Adjust the width as needed */
+    width: 600px;
     padding: 20px;
-    text-align: left; /* Align form elements to the left */
+    text-align: left;
     box-sizing: border-box;
 }
 
@@ -81,109 +81,31 @@ button {
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* Responsive styles for smaller screens */
-@media screen and (max-width: 768px) {
+/* Responsive for mobile */
+@media screen and (max-width: 480px) {
     .signup-container {
-        width: 90%; /* Adjust the width as needed for smaller screens */
+        width: 90%;
+        padding: 10px; /* Adjust padding for smaller screens */
     }
-}
-/* Global styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(#c04848, #480048);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
+    h2 {
+        font-size: 30px; /* Reduce the font size for headings */
+    }
 
-.signup-container {
-    background: rgba(255, 255, 255, 0.06);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    border-radius: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    width: 600px; /* Adjust the width as needed */
-    padding: 20px;
-    text-align: left; /* Align form elements to the left */
-}
+    label {
+        font-size: 16px; /* Reduce the font size for labels */
+    }
 
-h2 {
-    font-size: 50px;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    letter-spacing: 3px;
-    margin-bottom: 20px;
-    opacity: 0.7;
-}
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="password"],
+    select {
+        font-size: 14px; /* Reduce the font size for form elements */
+    }
 
-label {
-    font-size: 20px;
-    color: white;
-    opacity: 0.8;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-/* Style for form elements */
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
-input[type="password"],
-select {
-    width: 100%;
-    color: white;
-    margin: 8px 0;
-    padding: 8px;
-    border: none;
-    outline: none;
-    background: transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-    opacity: 0.8;
-}
- 
-legend {
-    font-size: 20px;
-    color: white;
-    margin-left: 10%;
-    opacity: 0.8;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-
-}
-
-/* Style for buttons */
- signup-button{
-    width: 120px; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the button horizontally */
-    color: white;
-    opacity: 0.7;
-    background-color: rgba(255, 255, 255, 0.6);
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 4px 16px rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    position: absolute; /* Set position to absolute */
-    bottom: -40px; /* Adjust the distance from the container */
-    left: 50%; /* Move the button to the center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
-}
-.signup-button:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #000; /* Change text color on hover */
-}
-
-/* Responsive styles for smaller screens */
-@media screen and (max-width: 768px) {
-    .signup-container {
-        width: 90%; /* Adjust the width as needed for smaller screens */
+    button {
+        font-size: 16px; /* Reduce the font size for buttons */
     }
 }
